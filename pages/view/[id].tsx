@@ -2,47 +2,48 @@ import { ChevronRightIcon, InformationCircleIcon, XIcon } from "@heroicons/react
 import { GetStaticPaths, NextPage } from "next";
 import Box from "../../components/Box";
 import Link from 'next/link'
-import exercises from "../../data/exercises.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/dist/client/router";
-
+import workouts from "../../data/workouts.json";
+import exercises from "../../data/exercises.json";
 
 const Workout = ({ id } : {id: string}) => {
     const [info, setInfo] = useState({name: '', description: '', image: '', targets: ['']});
     const router = useRouter();
-    let data: {name: string, description: string, image: string, targets: string[]}[] = []
-    Object.keys(exercises).forEach(key => {
-        data.push((exercises as any)[key]);
-    });
+    let data: {name: string, duration?: string, hint?: string, reps?: string}[] = (workouts as any)[id].workouts;
+    const [diff, setDiff] = useState(1);
+
+    useEffect(() => {
+        setDiff(parseInt(localStorage.difficulty||'1'));
+    }, [])
+    
     return (
         <div className="w-full h-screen">
             <div className="flex justify-between items-center">
                 <p className="p-6 text-2xl font-semibold">Train</p>
-                <Link href="/">
-                <div className="p-6">
+                <div className="p-6" onClick={() => router.back()}>
                     <XIcon className="w-7 h-7 text-gray-400" />
                 </div>
-                </Link>
             </div>
-            <Box img="/core1.jpg" css="h-40">
+            <Box img={(workouts as any)[id].img} css="h-40">
 
             </Box>
             <div className="flex">
-                <p className="p-6 text-2xl">The Plank<br /> <span className="font-semibold">Challenge</span></p>
+                <p className="p-6 text-2xl">{(workouts as any)[id].name}</p>
                 <div className="p-3 flex flex-1 justify-center items-center">
-                    <div className="rounded flex-1 bg-blue-500 text-white p-3 text-center text-lg font-semibold" onClick={() => {router.push('/workout/1')}}>
+                    <div className="rounded flex-1 bg-blue-500 text-white p-3 text-center text-lg font-semibold" onClick={() => {router.push(`/workout/${id}`)}}>
                         <p>Start</p>
                     </div>
                 </div>
             </div>
             <p className="mx-5 font-semibold mb-3">Preview</p>
             {data.map((item, index) => (
-                <div onClick={() => setInfo(item)} className="-my-4">
+                <div onClick={() => setInfo((exercises as any)[item.name])} className="-my-4">
                     <Box css='flex justify-between items-center' >
-                        <div key={index} className="w-20 h-20 rounded-xl bg-cover bg-center flex-shrink-0 border" style={{backgroundImage: `url(${item.image})`}}></div>
+                        <div key={index} className="w-20 h-20 rounded-xl bg-cover bg-center flex-shrink-0 border" style={{backgroundImage: `url(${(exercises as any)[item.name].image})`}}></div>
                         <div className="w-full flex flex-col justify-center p-3 flex-grow">
                             <p className="text-xl font-semibold">{item.name}</p>
-                            <p className="opacity-50">30 sec</p>
+                            <p className="opacity-50">{(item.duration||item.reps||['x','x','x','x'])[diff-1]}  {item.duration===undefined?item.reps===undefined?'':'reps':'sec'}</p>
                         </div>
                         <InformationCircleIcon className="h-8 w-8 text-gray-400" />
                     </Box>
@@ -76,10 +77,10 @@ const Workout = ({ id } : {id: string}) => {
 export const getStaticPaths: GetStaticPaths = async () => {
     return {
       paths: [
-        { params: { id: "1" }},
-        { params: { id: "2" }},
-        { params: { id: "3" }},
-        { params: { id: "4" }},
+        { params: { id: "fb" }},
+        { params: { id: "tpc" }},
+        { params: { id: "tq" }},
+        { params: { id: "pp" }},
         { params: { id: "5" }},
         { params: { id: "6" }},
       ],

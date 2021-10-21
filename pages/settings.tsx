@@ -4,12 +4,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Box from "../components/Box";
 import Head from 'next/head'
+import { useRouter } from "next/router";
 
 const Settings : NextPage = () => {
     
     const [isOpen, setIsOpen] = useState(false);
     const [diff, setDiff] = useState(1);
     const [goal, setGoal] = useState(1);
+    const router = useRouter();
 
     useEffect(() => {
         localStorage.theme === 'dark'?setIsOpen(true):setIsOpen(false);
@@ -50,11 +52,9 @@ const Settings : NextPage = () => {
             </Head>
             <div className="flex justify-between items-center">
                 <p className="p-6 text-2xl font-semibold">Settings</p>
-                <Link href="/">
-                <div className="p-6">
+                <div className="p-6" onClick={() => router.back()}>
                     <XIcon className="w-7 h-7 text-gray-400" />
                 </div>
-                </Link>
             </div>
 
             <Box css="border flex justify-between items-center" >
@@ -66,27 +66,27 @@ const Settings : NextPage = () => {
             <br/>
             <p className="mx-5 font-semibold">Difficulty</p>
             <div onClick={() => setDiff(1)}>
-                <Box css={`flex transition-all justify-between items-center ${diff<3?'font-semibold border-2 border-green-500':'border text-gray-500'}`} outercss="py-1" >
+                <Box css={`flex transition-all justify-between items-center ${diff===1?'font-semibold border-2 border-green-500':'border text-gray-500'}`} outercss="py-1" >
                     <p>Beginner</p>
-                    {(diff<3)?<CheckIcon className="w-7 h-7 text-green-500" />:null}
+                    {(diff===1)?<CheckIcon className="w-7 h-7 text-green-500" />:null}
+                </Box>
+            </div>
+            <div onClick={() => setDiff(2)}>
+                <Box css={`flex transition-all justify-between items-center ${(diff===2)?'font-semibold border-2 border-green-500':'border text-gray-500'}`} outercss="py-1" >
+                    <p>Intermediate</p>
+                    {(diff===2)?<CheckIcon className="w-7 h-7 text-green-500" />:null}
                 </Box>
             </div>
             <div onClick={() => setDiff(3)}>
-                <Box css={`flex transition-all justify-between items-center ${(diff<5&&diff>2)?'font-semibold border-2 border-green-500':'border text-gray-500'}`} outercss="py-1" >
-                    <p>Intermediate</p>
-                    {(diff<5&&diff>2)?<CheckIcon className="w-7 h-7 text-green-500" />:null}
-                </Box>
-            </div>
-            <div onClick={() => setDiff(5)}>
-                <Box css={`flex transition-all justify-between items-center ${(diff<7&&diff>4)?'font-semibold border-2 border-green-500':'border text-gray-500'}`} outercss="py-1" >
+                <Box css={`flex transition-all justify-between items-center ${(diff===3)?'font-semibold border-2 border-green-500':'border text-gray-500'}`} outercss="py-1" >
                     <p>Advanced</p>
-                    {(diff<7&&diff>4)?<CheckIcon className="w-7 h-7 text-green-500" />:null}
+                    {(diff===3)?<CheckIcon className="w-7 h-7 text-green-500" />:null}
                 </Box>
             </div>
-            <div onClick={() => setDiff(7)}>
-                <Box css={`flex transition-all justify-between items-center ${(diff<9&&diff>6)?'font-semibold border-2 border-green-500':'border text-gray-500'}`} outercss="py-1" >
+            <div onClick={() => setDiff(4)}>
+                <Box css={`flex transition-all justify-between items-center ${(diff===4)?'font-semibold border-2 border-green-500':'border text-gray-500'}`} outercss="py-1" >
                     <p>Legendary</p>
-                    {(diff<9&&diff>6)?<CheckIcon className="w-7 h-7 text-green-500" />:null}
+                    {(diff===4)?<CheckIcon className="w-7 h-7 text-green-500" />:null}
                 </Box>
             </div>
             <br />

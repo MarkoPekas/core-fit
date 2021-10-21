@@ -1,0 +1,273 @@
+{
+    "tpc":{
+        "name": "The Plank Challenge",
+        "difficulty": "beginner",
+        "img": "/core.jpg",
+        "workouts": [
+            {
+                "name": "Jumping Jacks",
+                "duration": ["15", "30", "45", "60"]
+            },{
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "left"
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "right"
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"],
+                "hint": "3 more sets"
+            },{
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "left"
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "right"
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"],
+                "hint": "2 more sets"
+            },{
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "left"
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "right"
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"],
+                "hint": "1 more set"
+            },{
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "left"
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "right"
+            }
+        ]
+    },
+    "fb":{
+        "name": "Fat Burner",
+        "difficulty": "intermediate",
+        "img": "/planche.jpg",
+        "workouts": [
+            {
+                "name":"Jumping Jacks",
+                "duration": ["15", "30", "45", "60"]
+            },{
+                "name": "Mountain Climbers",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "High Knees",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Crunches",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Leg Raises",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"]
+            },{
+                "name": "Mountain Climbers",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "High Knees",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Crunches",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Leg Raises",
+                "reps": ["10", "15", "20", "25"]
+            }
+        ]
+    },
+    "pp": {
+        "name": "Planche Progression",
+        "difficulty": "impossible",
+        "img": "/sixpack.jpg",
+        "workouts": [
+            {
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "left"
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "right"
+            },{
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "left"
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "right"
+            },{
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "left"
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "right"
+            },{
+                "name": "Leg Raises",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"]
+            },{
+                "name": "Leg Raises",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"]
+            },{
+                "name": "Leg Raises",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"],
+                "hint": "Half way there"
+            },{
+                "name": "Leg Raises",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"]
+            },{
+                "name": "Crunches",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"]
+            },{
+                "name": "Crunches",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"],
+                "hint": "Almost done"
+            },{
+                "name": "Crunches",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Rest",
+                "duration": ["30", "30", "30", "30"]
+            },{
+                "name": "Crunches",
+                "reps": ["10", "15", "20", "25"]
+            }
+        ]
+    },
+    "tq": {
+        "name": "The Queen",
+        "difficulty": "Legendary",
+        "img": "/core2.jpg",
+        "workouts": [
+            {
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "left"
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "right"
+            },{
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "left"
+            },{
+                "name": "Side Plank",
+                "duration": ["30", "60", "90", "120"],
+                "hint": "right"
+            },{
+                "name": "Plank",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Russian Twist",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Crunches",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name":"Leg Raises",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Crunches",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name":"Leg Raises",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Crunches",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name":"Leg Raises",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "Mountain Climbers",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Russian Twist",
+                "reps": ["10", "15", "20", "25"]
+            },{
+                "name": "High Knees",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Mountain Climbers",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "High Knees",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Mountain Climbers",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "High Knees",
+                "duration": ["30", "60", "90", "120"]
+            },{
+                "name": "Russian Twist",
+                "reps": ["10", "15", "20", "25"]
+            }
+        ]
+    }
+}

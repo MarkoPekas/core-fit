@@ -5,11 +5,13 @@ import Link from 'next/link';
 import { XIcon } from '@heroicons/react/outline';
 import Head from 'next/head';
 import exercises from '../data/exercises.json';
+import { useRouter } from 'next/router';
 const Chart = () => {
     
     const [pBar, setPBar] = useState(0);
     const [info, setInfo] = useState({name: '', description: '', image: '', targets: ['']});
     const [search, setSearch] = useState('');
+    const router = useRouter();
 
     useEffect(() => {
         setPBar(Math.floor((localStorage.difficulty||1)/8 * 100));
@@ -35,11 +37,9 @@ const Chart = () => {
             </Head>
             <div className="flex justify-between items-center">
                 <p className="p-6 text-2xl font-semibold">Learn</p>
-                <Link href="/">
-                <div className="p-6">
+                <div className="p-6" onClick={() => router.back()}>
                     <XIcon className="w-7 h-7 text-gray-400" />
                 </div>
-                </Link>
             </div>
             <div className="p-3">
                 <div className="p-2 rounded border flex">
