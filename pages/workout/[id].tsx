@@ -64,9 +64,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         { params: { id: "fb" }},
         { params: { id: "tpc" }},
         { params: { id: "tq" }},
-        { params: { id: "pp" }},
-        { params: { id: "5" }},
-        { params: { id: "6" }},
+        { params: { id: "pp" }}
       ],
         fallback: false
     };
