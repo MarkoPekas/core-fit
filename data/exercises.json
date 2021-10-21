@@ -1,0 +1,230 @@
+{
+    "Bicycle Crunches":{
+        "name": "Bicycle Crunches",
+        "description": "Lift one leg just off the ground and extend it out. Lift the other leg and bend your knee towards your chest. As you do so twist through your core so the opposite arm comes towards the raised knee. Then repeat with the opposite leg.",
+        "image": "/images/bicyclecrunches.gif",
+        "targets": ["chest", "shoulders", "back", "legs", "core"]
+    },
+    "Burpies": {
+        "name": "Burpies",
+        "description": "Jump with your arms extended up. Then drop to the floor and do a push up.",
+        "image": "/images/burpies.gif",
+        "targets": ["chest", "shoulders", "legs", "core", "arms"]
+    },
+    "Chest Opener": {
+        "name": "Chest Opener",
+        "description": "Stand with your feet shoulder width apart. Then connect your hands behind your back. Keep your arms straight and try to push them up and your chest out.",
+        "image": "/images/chestopener.gif",
+        "targets": ["chest"]
+    },
+    "Crunches": {
+        "name": "Crunches",
+        "description": "Lie on your back with your knees bent and your feet flat on the floor. Then bend up 50% of the way to your knees.",
+        "image": "/images/crunches.gif",
+        "targets": ["core"]
+    },
+    "Deltoid Stretch": {
+        "name": "Deltoid Stretch",
+        "description": "Stand with your feet shoulder width apart. Then cross your body with one arm, parallel to the floor, pushing on your elbow with your other hand.",
+        "image": "/images/deltoidstretch.gif",
+        "targets": ["shoulders"]
+    },
+    "Dips": {
+        "name": "Dips",
+        "description": "Hold your body up on a chair with your arms. Keep your feel in front (helping you as much as you deem necessary). Then lower your body until your elbows reach 90 degrees",
+        "image": "/images/dips.gif",
+        "targets": ["shoulders", "arms"]
+    },
+    "Figure Four Stretch": {
+        "name": "Figure Four Stretch",
+        "description": "",
+        "image": "/images/figurefourstretch.gif",
+        "targets": ["legs"]
+    },
+    "Flutter Kicks": {
+        "name": "Flutter Kicks",
+        "description": "Lay flat on your back. Then, with your arms under your butt for support, kick your feet up and down.",
+        "image": "/images/flutterkicks.gif",
+        "targets": ["legs", "core"]
+    },
+    "Glutes Seated Twist": {
+        "name": "Glutes Seated Twist",
+        "description": "Sit down with one leg straight and the other bent and crossed over it. Rotate your torso towards the bent leg as much as you can while applying pressure to the bent leg.",
+        "image": "/images/glutesseatedtwist.gif",
+        "targets": ["legs"]
+    },
+    "Hamstring Stretch": {
+        "name": "Hamstring Stretch",
+        "description": "Stand with your feet shoulder width apart. Then extend one leg forward and bent the other slightly. Reach towards your extended leg.",
+        "image": "/images/hamstringstretch.gif",
+        "targets": ["legs"]
+    },
+    "Handstand": {
+        "name": "Handstand",
+        "description": "Use a wall for stability if necessary.",
+        "image": "/images/handstand.gif",
+        "targets": ["shoulders", "core", "arms"]
+    },
+    "Heel Touches": {
+        "name": "Heel Touches",
+        "description": "Lay flat on your back with your knees bent and feet flat on the ground. Then, keeping both arms extended, reach towards your left heel with your left arm, then repeat for the right side.",
+        "image": "/images/heeltouches.gif",
+        "targets": ["core"]
+    },
+    "High Knees": {
+        "name": "High Knees",
+        "description": "Run in place but try to lift your knee above hip height on every stride.",
+        "image": "/images/highknees.gif",
+        "targets": ["legs", "core"]
+    },
+    "Jumping Jacks": {
+        "name": "Jumping Jacks",
+        "description": "Jump with your feet together and your arms extended. Then jump with your feet apart and your arms extended.",
+        "image": "/images/jumpingjacks.gif",
+        "targets": ["legs", "core", "arms"]
+    },
+    "Knee Pushups": {
+        "name": "Knee Pushups",
+        "description": "Keep your knees, but, torso and head in a straight line. Lower your body to the floor if you can. Keep your arms along your body.",
+        "image": "/images/kneepushups.gif",
+        "targets": ["shoulders", "arms", "core"]
+    },
+    "Leg Raises": {
+        "name": "Leg Raises",
+        "description": "Lay flat on your back. Then, raise your legs up and down.",
+        "image": "/images/legraises.gif",
+        "targets": ["legs", "core"]
+    },
+    "Low Bridge": {
+        "name": "Low Bridge",
+        "description": "Lay on your back with your knees bent and feet flat on the floor. Then raise your pelvise as high as you can and hold.",
+        "image": "/images/lowbridge.gif",
+        "targets": ["core", "back"]
+    },
+    "Lunges": {
+        "name": "Lunges",
+        "description": "Stand with your feet shoulder width apart. Then take a step forward and lower your body until your knees are at 90 degrees.",
+        "image": "/images/lunges.gif",
+        "targets": ["legs"]
+    },
+    "Modified Hurdle Stretch": {
+        "name": "Modified Hurdle Stretch",
+        "description": "",
+        "image": "/images/modifiedhurdlestretch.gif",
+        "targets": ["legs"]
+    },
+    "Mountain Climbers": {
+        "name": "Mountain Climbers",
+        "description": "Hold a pushup position while alternatively pulling your legs in towards your chest.",
+        "image": "/images/mountainclimbers.gif",
+        "targets": ["shoulders", "legs", "core"]
+    },
+    "Plank": {
+        "name": "Plank",
+        "description": "Position yourself on your toes and forearms. Keep your body flat and hold.",
+        "image": "/images/plank.gif",
+        "targets": ["core"]
+    },
+    "Pull ups": {
+        "name": "Pull ups",
+        "description": "Hold a pull up bar with your hands on it. Then, pull yourself up until your chin is over the bar.",
+        "image": "/images/pullups.gif",
+        "targets": ["shoulders", "arms", "back"]
+    },
+    "Push ups": {
+        "name": "Push ups",
+        "description": "Stand with your feet together and hands flat on the floor. Then, push yourself up until your arms are straight. Holding your hands closer together will make the workout more difficult.",
+        "image": "/images/pushups.gif",
+        "targets": ["shoulders", "arms", "core"]
+    },
+    "Quads Standing Stretch": {
+        "name": "Quads Standing Stretch",
+        "description": "",
+        "image": "/images/quadsstandingstretch.gif",
+        "targets": ["legs"]
+    },
+    "Rest": {
+        "name": "Rest",
+        "description": "",
+        "image": "/images/rest.gif",
+        "targets": ["body", "mind"]
+    },
+    "Run": {
+        "name": "Run",
+        "description": "Reps are set in kilometers.",
+        "image": "/images/run.gif",
+        "targets": ["legs", "core"]
+    },
+    "Russian Twist": {
+        "name": "Russian Twist",
+        "description": "Sit down, bend your knees and raise your legs. Swing a weight (or your arms) from one side of your body to the other.",
+        "image": "/images/russiantwist.gif",
+        "targets": ["core"]
+    },
+    "Seated Hamstring Stretch": {
+        "name": "Seated Hamstring Stretch",
+        "description": "",
+        "image": "/images/seatedhamstringstretch.gif",
+        "targets": ["legs"]
+    },
+    "Seated Heart Opener": {
+        "name": "Seated Heart Opener",
+        "description": "",
+        "image": "/images/seatedheartopener.gif",
+        "targets": ["chest"]
+    },
+    "Side Plank": {
+        "name": "Side Plank",
+        "description": "Lie on your side with your feet and one forearm on the floor. Then, raise your body up until body is straight and hold.",
+        "image": "/images/sideplank.gif",
+        "targets": ["core"]
+    },
+    "Sit ups": {
+        "name": "Sit ups",
+        "description": "Lie on your back with your knees bent and feet flat on the floor. Then, raise your body up until your head reaches your knees.",
+        "image": "/images/situps.gif",
+        "targets": ["core"]
+    },
+    "Squat Jumps": {
+        "name": "Squat Jumps",
+        "description": "Stand with your feet shoulder width apart. Then lower your body until your knees are at 90 degrees. Extend your legs explosively and jump.",
+        "image": "/images/squatjumps.gif",
+        "targets": ["legs"]
+    },
+    "Squats": {
+        "name": "Squats",
+        "description": "Stand with your feet shoulder width apart. Then, lower your body until your knees are at 90 degrees.",
+        "image": "/images/squats.gif",
+        "targets": ["legs"]
+    },
+    "Straddle Stretch": {
+        "name": "Straddle Stretch",
+        "description": "",
+        "image": "/images/straddlestretch.gif",
+        "targets": ["legs"]
+    },
+    "Supermen": {
+        "name": "Supermen",
+        "description": "Lay face down on the floor. Raise your arms and legs at the same time.",
+        "image": "/images/supermen.gif",
+        "targets": ["back"]
+    },
+    "Triceps Stretch": {
+        "name": "Triceps Stretch",
+        "description": "",
+        "image": "/images/tricepsstretch.gif",
+        "targets": ["arms"]
+    },
+    "Wall Sit": {
+        "name": "Wall Sit",
+        "description": "Place your back against a wall and bend your knees to 90 degrees. Hold.",
+        "image": "/images/wallsit.gif",
+        "targets": ["core", "legs"]
+    },
+    "Wide Grip Pushups": {
+        "name": "Wide Grip Pushups",
+        "description": "Stand with your feet together and hands flat on the floor. Then, push yourself up until your arms are straight. Hold your hands wider than your shoulders.",
+        "image": "/images/widegrippushups.gif",
+        "targets": ["shoulders", "arms", "core", "chest"]
+    }
+}

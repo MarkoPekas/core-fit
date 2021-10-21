@@ -7,8 +7,10 @@ import Box from "../../components/Box";
 const Workout = ({ id } : {id: string}) => {
     return (
         <div className="w-full h-screen">
-            <div className="h-1/2 w-full bg-contain bg-center" style={{backgroundImage: `url(${'/images/crunches.gif'})`}}>
+            <div className="h-1/2 w-full p-5">
+            <div className="w-full h-full  bg-contain rounded-3xl border bg-center" style={{backgroundImage: `url(${'/images/crunches.gif'})`}}>
 
+            </div>
             </div>
             <div className="h-1/2 w-full flex flex-col">
                 <p className="text-2xl text-center font-medium ">Crunches</p>

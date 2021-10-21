@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import Box from '../components/Box'
 import Nav from '../components/Nav'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   const [wHeight, setWHeight] = useState(312)
@@ -29,17 +30,70 @@ const Home: NextPage = () => {
       </Head>
       <Nav />
       <p className="p-6 text-2xl">Begin Your<br /> <span className="font-semibold">Core Program</span></p>
-      <Box css='flex justify-between items-center border' >
-        <FlagIcon className="h-7 w-7 mx-2 text-sexy" />
-        <p className="text-xl mx-2">Daily Session</p>
-      </Box>
+      
+      <div className="flex justify-between"><p className="mx-3 font-semibold">Timeline</p></div>
+      <div className="w-full h-48 flex-shrink-0 flex p-3">
+        <div className="flex-1 flex flex-col p-2 text-center">
+          <p>M</p>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border bg-blue-500"></div>
+        </div>
+        <div className="flex-1 flex flex-col p-2 text-center">
+          <p>T</p>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border bg-red-500"></div>
+        </div>
+        <div className="flex-1 flex flex-col p-2 text-center">
+          <p>W</p>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border bg-blue-500"></div>
+        </div>
+        <div className="flex-1 flex flex-col p-2 text-center">
+          <p>T</p>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border-2 border-blue-500"></div>
+        </div>
+        <div className="flex-1 flex flex-col p-2 text-center">
+          <p>F</p>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+        </div>
+        <div className="flex-1 flex flex-col p-2 text-center">
+          <p>S</p>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+        </div>
+        <Link href="/view/1">
+        <div className="flex-1 flex flex-col p-2 text-center">
+          <p>S</p>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border"></div>
+          <div className="flex-1 rounded border bg-blue-500"></div>
+          <div className="flex-1 rounded border"></div>
+        </div>
+        </Link>
+      </div>
       <br />
 
 
 
-      <div className="flex justify-between"><p className="mx-3 font-semibold">Discover Workouts</p><p className="font-medium text-blue-500 mx-3" onClick={() => setWHeight(wHeight===312?156*4:312)}>see all</p></div>
+      
+
+      <div className="flex justify-between"><p className="mx-3 font-semibold">Discover Workouts</p><p className="font-medium text-blue-500 mx-3" onClick={() => setWHeight(wHeight===312?156*4:312)}>{wHeight===312?'see all':'see less'}</p></div>
       <div className="overflow-hidden flex-shrink-0 transition-all" style={{height: `${wHeight}px`}}>
-        <Box css='flex flex-col p-5 shadow' img="/core.jpg">
+        <Box css='flex flex-col p-5 shadow' img="/core.jpg" to="/view/1">
           <p className="text-white text-xl font-semibold mt-10">The Plank Challenge</p>
           <p className="text-white opacity-50">Beginner</p>
         </Box>
@@ -60,9 +114,9 @@ const Home: NextPage = () => {
 
 
       <br />
-      <div className="flex justify-between"><p className="mx-3 font-semibold">Super-Quick Workouts</p><p className="font-medium text-blue-500 mx-3" onClick={() => setQHeight(qHeight===360?120*6:360)}>see all</p></div>
+      <div className="flex justify-between"><p className="mx-3 font-semibold">Super-Quick Workouts</p><p className="font-medium text-blue-500 mx-3" onClick={() => setQHeight(qHeight===360?120*6:360)}>{qHeight===360?'see all':'see less'}</p></div>
       <div className="overflow-hidden flex-shrink-0 transition-all" style={{height: `${qHeight}px`}}>
-        <Box css='flex justify-between items-center' >
+        <Box css='flex justify-between items-center' to='/view/1'>
           <div className="w-20 h-20 rounded-xl bg-cover bg-center flex-shrink-0" style={{backgroundImage: `url(/core3.jpg)`}}></div>
           <div className="w-full flex flex-col justify-center p-3 flex-grow">
             <p className="text-xl font-semibold">Light Weight</p>
